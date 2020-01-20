@@ -65,12 +65,12 @@ def get_account_settings(account: Account) -> AccountSettings:
       <div class="card">
         <div>
           <h2>Endpoint Execution</h2>
-          <p>When running endpoints, Pybiz executes a series of callbacks that apply
-          middleware and transform native application inputs and outputs into and out
-          of the endpoint. In the following documentation (as well as in code),
-          the Python callable registered as an endpoint is called the <i>target</i>.
+          <p>When running endpoints, Pybiz executes a series of callbacks
+          that transform native application inputs and outputs into and out of the
+          endpoint and apply middleware.</p>
 
-          </p>
+          <p>A note on nomenclature: the Python callable registered as an endpoint is
+          called the <i>target</i> in docs and code.</p>
 
           <h3>Process Overview:</h3>
           <ol id="steps-overview-list">
@@ -115,7 +115,7 @@ def add_task(owner_id: str, project_id: str, task_data: dict):
 
           <p>
           The aforementioned preamble of boilerplate queries has several
-          dnativebacks.
+          drawbacks.
           </p>
 
           <ul>
